@@ -1,24 +1,24 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 public class GraphImpl {
-    public static void bfs(List<List<Integer>> graph, int node, boolean[] visited){
-        Queue<Integer> queue=new LinkedList();
-        queue.add(0);
-        visited[0]=true;
-        while(!queue.isEmpty()){
-            int ele=queue.poll();
-            System.out.println(ele);
-            for(int neigh : graph.get(ele)){
-                if(!visited[neigh]){
-                    queue.add(neigh);
-                    visited[neigh]=true;
-                }
-            }
-        }
-    }
+    // breath first search
+    // public static void bfs(List<List<Integer>> graph, int node, boolean[] visited){
+    //     Queue<Integer> queue=new LinkedList();
+    //     queue.add(0);
+    //     visited[0]=true;
+    //     while(!queue.isEmpty()){
+    //         int ele=queue.poll();
+    //         System.out.println(ele);
+    //         for(int neigh : graph.get(ele)){
+    //             if(!visited[neigh]){
+    //                 queue.add(neigh);
+    //                 visited[neigh]=true;
+    //             }
+    //         }
+    //     }
+    // }
+    // depth first search
     public static void dfs(List<List<Integer>> graph, int node, boolean[] visited){
         System.out.println(node);
         visited[node]=true;
