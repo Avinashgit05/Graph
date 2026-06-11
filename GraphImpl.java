@@ -31,6 +31,7 @@ public class GraphImpl {
     public static void main(String[] args) {
         int V=4;
         List<List<Integer>> graph= new ArrayList<>();
+        // graph creation 
         for(int i=0; i<=V;i++){
             graph.add(new ArrayList<>());
         }
