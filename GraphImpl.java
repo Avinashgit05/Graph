@@ -21,6 +21,7 @@ public class GraphImpl {
     // depth first search
     public static void dfs(List<List<Integer>> graph, int node, boolean[] visited){
         System.out.println(node);
+        // to check whether the vertex is visited or not 
         visited[node]=true;
         for(int neighbour : graph.get(node)){
             if(!visited[neighbour]){
